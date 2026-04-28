@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Web Services — Piet Krägeloh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #f5f4f0; min-height: 100vh; }
+  body { font-family: 'DM Sans', sans-serif; color: #1a1a1a; max-width: 480px; margin: 0 auto; background: #f5f4f0; }
+  .topbar { display: flex; align-items: center; padding: 20px 20px 0; }
+  .back { font-size: 12px; color: #aaa; text-decoration: none; letter-spacing: 0.06em; display: flex; align-items: center; gap: 4px; }
+  .back:before { content: '‹'; font-size: 18px; line-height: 1; }
+  .hero { padding: 40px 32px 44px; }
+  .hero-eyebrow { font-size: 9px; letter-spacing: 0.22em; color: #aaa; text-transform: uppercase; margin-bottom: 14px; }
+  .hero-title { font-family: 'DM Serif Display', serif; font-size: 36px; line-height: 1.1; margin-bottom: 14px; color: #1a1a1a; }
+  .hero-desc { font-size: 13px; color: #999; font-weight: 300; line-height: 1.8; }
+  .body { padding: 0 20px 56px; }
+  .section-label { font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: #bbb; margin-bottom: 12px; padding-left: 2px; }
+  .cards { display: flex; flex-direction: column; gap: 8px; margin-bottom: 32px; }
+  .card { background: #fff; border-radius: 14px; padding: 20px 20px; border: 0.5px solid #ececea; }
+  .card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+  .card-icon { width: 36px; height: 36px; border-radius: 10px; background: #f5f4f0; display: flex; align-items: center; justify-content: center; font-size: 16px; flex-shrink: 0; }
+  .card-title { font-size: 14px; font-weight: 500; }
+  .card-body { font-size: 12px; color: #999; line-height: 1.8; }
+  .tag-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  .tag { font-size: 10px; color: #aaa; border: 0.5px solid #e0e0de; border-radius: 20px; padding: 4px 10px; letter-spacing: 0.04em; }
+  .process { display: flex; flex-direction: column; gap: 0; margin-bottom: 32px; background: #fff; border-radius: 14px; border: 0.5px solid #ececea; overflow: hidden; }
+  .process-step { display: flex; align-items: flex-start; gap: 14px; padding: 16px 18px; border-bottom: 0.5px solid #f2f2f0; }
+  .process-step:last-child { border-bottom: none; }
+  .step-num { font-size: 10px; color: #ccc; font-weight: 500; min-width: 18px; padding-top: 2px; }
+  .step-title { font-size: 13px; font-weight: 500; margin-bottom: 2px; }
+  .step-desc { font-size: 11px; color: #bbb; line-height: 1.6; }
+  .cta-block { background: #fff; border-radius: 16px; padding: 26px 24px; margin-bottom: 16px; text-align: center; border: 0.5px solid #ececea; }
+  .cta-label { font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: #bbb; margin-bottom: 10px; }
+  .cta-text { font-family: 'DM Serif Display', serif; font-size: 22px; color: #1a1a1a; margin-bottom: 18px; line-height: 1.3; }
+  .cta-btn { display: inline-block; background: #1a1a1a; color: #fff; font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; padding: 12px 26px; border-radius: 10px; text-decoration: none; }
+  .cta-secondary { display: block; text-align: center; margin-top: 12px; font-size: 11px; color: #bbb; text-decoration: none; letter-spacing: 0.04em; }
+</style>
+</head>
+<body>
+<div class="topbar"><a href="index.html" class="back">Zurück</a></div>
+<div class="hero">
+  <div class="hero-eyebrow">Web Services</div>
+  <div class="hero-title">Websites, die<br>funktionieren.</div>
+  <div class="hero-desc">Klares Design, sauberer Code, schnelle Umsetzung — für Selbstständige, kleine Unternehmen und alle, die online professionell auftreten wollen.</div>
+</div>
+<div class="body">
+  <div class="section-label">Leistungen</div>
+  <div class="cards">
+    <div class="card">
+      <div class="card-header"><div class="card-icon">🎨</div><div class="card-title">Webdesign</div></div>
+      <div class="card-body">Schlichte, moderne Designs, die zur Marke passen — ohne Schnickschnack, dafür mit klarer Struktur und guter Nutzererfahrung.</div>
+      <div class="tag-row"><span class="tag">UI Design</span><span class="tag">Landing Pages</span><span class="tag">Mobile First</span></div>
+    </div>
+    <div class="card">
+      <div class="card-header"><div class="card-icon">⚙️</div><div class="card-title">Entwicklung</div></div>
+      <div class="card-body">Von der einfachen One-Pager bis zur mehrseitigen Website — sauber entwickelt, schnell geladen, auf allen Geräten gut.</div>
+      <div class="tag-row"><span class="tag">HTML/CSS</span><span class="tag">Responsive</span><span class="tag">Performance</span></div>
+    </div>
+    <div class="card">
+      <div class="card-header"><div class="card-icon">💡</div><div class="card-title">Beratung</div></div>
+      <div class="card-body">Du weißt nicht, wo du anfangen sollst? Ich helfe dir, die richtige Lösung für dein Projekt zu finden — ohne Umwege.</div>
+      <div class="tag-row"><span class="tag">Strategie</span><span class="tag">Erstgespräch</span><span class="tag">Kostenlos</span></div>
+    </div>
+  </div>
+  <div class="section-label">So läuft es ab</div>
+  <div class="process">
+    <div class="process-step"><div class="step-num">01</div><div><div class="step-title">Erstgespräch</div><div class="step-desc">Wir klären kurz, was du brauchst und was das Ziel ist.</div></div></div>
+    <div class="process-step"><div class="step-num">02</div><div><div class="step-title">Konzept</div><div class="step-desc">Ich zeige dir einen ersten Entwurf — klar und kommentiert.</div></div></div>
+    <div class="process-step"><div class="step-num">03</div><div><div class="step-title">Umsetzung</div><div class="step-desc">Schnelle, saubere Entwicklung mit kurzen Abstimmungsrunden.</div></div></div>
+    <div class="process-step"><div class="step-num">04</div><div><div class="step-title">Launch</div><div class="step-desc">Übergabe, Hosting-Setup und falls nötig kurze Einweisung.</div></div></div>
+  </div>
+  <div class="cta-block">
+    <div class="cta-label">Projekt besprechen</div>
+    <div class="cta-text">Erstgespräch ist kostenlos.</div>
+    <a href="https://wa.me/4915731711713" class="cta-btn">WhatsApp →</a>
+    <a href="mailto:media@pietkraegeloh.de" class="cta-secondary">media@pietkraegeloh.de</a>
+  </div>
+</div>
+</body>
+</html>
